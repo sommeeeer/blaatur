@@ -48,8 +48,6 @@ function updateCountdown() {
     let secondsString = '';
     if (seconds === 1) {
       secondsString = '1 sekund ';
-    } else if (seconds === 0) {
-      secondsString = '';
     } else {
       secondsString = `${seconds} sekunder `;
     }
