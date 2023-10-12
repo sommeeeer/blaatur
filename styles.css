@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 body {
   background-color: #fbf5ff;
   margin: 0;
@@ -55,7 +62,6 @@ body {
 .svg {
   display: flex;
   justify-content: center;
-  padding: 1rem;
 }
 
 .svg svg:hover {
@@ -91,4 +97,10 @@ body {
   .countdown {
     gap: 4rem;
   }
+}
+
+.trykk {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
