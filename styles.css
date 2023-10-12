@@ -15,3 +15,17 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+.countdown {
+  color: #a463bf;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #a463bf 0%,
+    #8e43ad 33%,
+    #9075a6 67%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
