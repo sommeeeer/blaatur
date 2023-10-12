@@ -1,0 +1,17 @@
+body {
+  background-color: #fbf5ff;
+  color: #251531;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
