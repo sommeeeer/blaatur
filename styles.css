@@ -1,5 +1,6 @@
 body {
   background-color: #fbf5ff;
+  margin: 0;
   color: #251531;
 }
 
@@ -7,25 +8,86 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 1rem;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .responsive {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+.timer-label {
+  font-size: 1rem;
 }
 
 .countdown {
-  color: #a463bf;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    #a463bf 0%,
-    #8e43ad 33%,
-    #9075a6 67%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with 0.8 opacity */
+  padding: 10px 5px 10px 5px;
+}
+
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#dager,
+#timer,
+#minutter {
+  font-size: 2.5rem;
+}
+
+#sekunder {
+  font-size: 2rem;
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.svg svg:hover {
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  #dager,
+  #timer,
+  #minutter {
+    font-size: 4rem;
+  }
+
+  #sekunder {
+    font-size: 3rem;
+  }
+  .countdown {
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #dager,
+  #timer,
+  #minutter {
+    font-size: 6rem;
+  }
+
+  #sekunder {
+    font-size: 4.5rem;
+  }
+  .countdown {
+    gap: 4rem;
+  }
 }

@@ -1,4 +1,8 @@
-const blaaturDay = new Date('2023-11-04T10:00:00+01:00');
+const blaaturDay = new Date('2023-11-04T10:00:00');
+const dagerSpan = document.getElementById('dager');
+const timerSpan = document.getElementById('timer');
+const minutterSpan = document.getElementById('minutter');
+const sekunderSpan = document.getElementById('sekunder');
 const countdownHeading = document.getElementById('countdown');
 
 function updateCountdown() {
@@ -17,44 +21,22 @@ function updateCountdown() {
       (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
     );
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-    let daysString = '';
-    if (days === 1) {
-      daysString = '1 dag ';
-    } else if (days === 0) {
-      daysString = '';
-    } else {
-      daysString = `${days} dager `;
-    }
-
-    let hoursString = '';
-    if (hours === 1) {
-      hoursString = '1 time ';
-    } else if (hours === 0) {
-      hoursString = '';
-    } else {
-      hoursString = `${hours} timer `;
-    }
-
-    let minutesString = '';
-    if (minutes === 1) {
-      minutesString = '1 minutt ';
-    } else if (minutes === 0) {
-      minutesString = '';
-    } else {
-      minutesString = `${minutes} minutter `;
-    }
-
-    let secondsString = '';
-    if (seconds === 1) {
-      secondsString = '1 sekund ';
-    } else {
-      secondsString = `${seconds} sekunder `;
-    }
-
-    countdownHeading.textContent = `${daysString}${hoursString}${minutesString}${secondsString}`;
+    dagerSpan.textContent = days;
+    timerSpan.textContent = hours;
+    minutterSpan.textContent = minutes;
+    sekunderSpan.textContent = seconds;
   }
 }
 
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
+
+const audio = document.getElementById('audio');
+const svg = document.querySelector('svg');
+svg.addEventListener('click', () => {
+  audio.currentTime = 0;
+  audio.play();
+});
+// document.addEventListener('DOMContentLoaded', () => {
+//   audio.play();
+// });

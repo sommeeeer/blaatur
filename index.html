@@ -5,12 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blåtur</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <div class="main">
-      <h1 class="countdown" id="countdown"></h1>
+      <div class="countdown">
+        <div class="countdown-box">
+          <span id="dager"></span>
+          <span class="timer-label">DAGER</span>
+        </div>
+        <div class="countdown-box">
+          <span id="timer"></span>
+          <span class="timer-label">TIMER</span>
+        </div>
+        <div class="countdown-box">
+          <span id="minutter"></span>
+          <span class="timer-label">MINUTTER</span>
+        </div>
+        <div class="countdown-box">
+          <span id="sekunder"></span>
+          <span class="timer-label">SEKUNDER</span>
+        </div>
+      </div>
       <img class="responsive" src="IMG_8911.jpeg" alt="Master bilde" />
     </div>
+    <div class="svg">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-music"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+        <path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+        <path d="M9 17v-13h10v13"></path>
+        <path d="M9 8h10"></path>
+      </svg>
+    </div>
+    <audio id="audio">
+      <source src="purple_hat.mp3" type="audio/mpeg" />
+    </audio>
     <script src="script.js"></script>
   </body>
 </html>
