@@ -75,6 +75,7 @@ body {
   }
   .countdown {
     gap: 2rem;
+    top: 15%;
   }
 }
 @media only screen and (min-width: 800px) {
