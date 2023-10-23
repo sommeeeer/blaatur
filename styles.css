@@ -6,10 +6,10 @@ body {
   height: 100%;
 }
 body {
-  background-color: #fbf5ff;
+  background-color: ;
   margin: 0;
   color: #251531;
-
+  background-color: #d1d5db;
   background-image: url('https://blaatur.odasofiedahl.com/IMG_8911.jpeg');
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +58,53 @@ body {
   cursor: pointer;
 }
 
+.boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pakkeliste {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+}
+
+li {
+  font-size: 1rem;
+}
+
+.oppmote {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+}
+
+.oppmote p {
+  font-size: 1.1rem;
+}
+
+.oppmote h3 {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
 @media only screen and (min-width: 600px) {
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: start;
+  }
+  li {
+    font-size: 1.3rem;
+  }
+  .oppmote p {
+    font-size: 1.3rem;
+  }
+  .oppmote h3 {
+    font-size: 1.6rem;
+  }
   #dager,
   #timer,
   #minutter {
@@ -96,36 +142,4 @@ body {
 
 .footer {
   padding: 2rem;
-}
-
-.pakkeliste {
-  padding: 1rem 2rem;
-  background-color: white;
-  color: black;
-}
-
-li {
-  font-size: 1.2rem;
-}
-
-.oppmote {
-  padding: 1rem 2rem;
-  background-color: white;
-  color: black;
-}
-
-.oppmote p {
-  font-size: 1.3rem;
-}
-
-.oppmote h3 {
-  font-style: italic;
-  font-size: 1.6rem;
-}
-
-.boxes {
-  display: flex;
-  gap: 8rem;
-  margin-top: 12rem;
-  align-items: start;
 }
