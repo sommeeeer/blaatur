@@ -18,7 +18,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .timer-label {
@@ -97,4 +96,36 @@ body {
 
 .footer {
   padding: 2rem;
+}
+
+.pakkeliste {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+.oppmote {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+}
+
+.oppmote p {
+  font-size: 1.3rem;
+}
+
+.oppmote h3 {
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.boxes {
+  display: flex;
+  gap: 8rem;
+  margin-top: 12rem;
+  align-items: start;
 }
